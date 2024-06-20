@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Freelance</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Calculadora Valor por Hora</h2>
+        <div class="logo">
+            <img src="logo-F.png" alt="">
+        </div>
+        <label for="monthlyIncome">¿Cuánto quieres ganar por mes?</label>
+        <input type="number" id="monthlyIncome" placeholder="Ingrese su objetivo de ingreso mensual">
+        <label for="workDaysPerWeek">Días de trabajo por semana:</label>
+        <input type="number" id="workDaysPerWeek" placeholder="Ingrese días de trabajo por semana">
+        <label for="workHoursPerDay">Horas de trabajo por día:</label>
+        <input type="number" id="workHoursPerDay" placeholder="Ingrese horas de trabajo por día">
+        <label for="vacationDays">Días de vacaciones:</label>
+        <input type="number" id="vacationDays" placeholder="Ingrese días de vacaciones">
+        <label for="sickDays">Días administrativos o de enfermedad:</label>
+        <input type="number" id="sickDays" placeholder="Ingrese días administrativos o enfermedad">
+        <button onclick="calculate()">Calcular</button>
+        <button id="resetButton" onclick="resetFields()" style="display:none;">Limpiar todo</button>
+        <div id="results"></div>
+        <p class="footer">©2024 | Luciano Villalba</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
